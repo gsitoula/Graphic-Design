@@ -1,1 +1,2 @@
-# PelucheApp
+# My Nerdy List App
+-------------------
