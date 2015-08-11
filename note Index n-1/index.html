@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html ng-app="noteApp">
+<head>
+    <!-- Charset -->
+    <meta charset="utf-8">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Scripts -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+     <!-- <script type="text/javascript" src="notes.js"></script> -->
+    <script type="text/javascript" src="app.js"></script>
+	<title>Note Index</title>
+</head>
+<body ng-controller="NoteController as note">
+
+   <div class="container">
+   <!-- Title -->
+  <div class="jumbotron">
+    <h1>Raptrónica: flow y éxtasis</h1>
+    <h2>
+      <small style="color: #FF7519;">¿Verano del amor? El hip-hop entra en la discoteca y no quiere salir.
+        <span style="color: grey;"> Por Nicole Freshee</span>
+      </small>
+    </h2>
+    
+  </div>
+   <!-- Note -->
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Hace veinte años, los raperos sampleaban a James Brown  Parliament-Funkdelic.
+      Hoy roban bases de temas euro-disco bien grasas-con ritmos ultraveloces, sintes trance y hasta fragmentos de música</p>
+    </div>
+    <div class="col-sm-4">
+      <p>house-. La tendencia explotó en 2009 con The E.N.D., el disco de los Black Eyed Peas pero explota en los boliches el tema de Pitbull que hizo famoso Ricardo Fort (y su pasito). Además, hubo hasta colaboraciones de Kid Cudi</p>
+    </div>
+    <div class="col-sm-4">        
+      <p>en los discos de Sharam (Deep Dish) y David Guetta. "Es lo mejor de ambos mundos", dice Guetta, quien produjo, además, "I Gotta Felling". "Cuando terminamos Will.i.am y yo gritábamos: ¡Creamos un nuevo sonido!." </p>
+    </div>
+  </div>
+
+  <!-- Http Content --> 
+  <div class="container-fluid">
+  <!-- Tabs -->
+<div>  
+<button type="button" class="btn btn-default" ng-repeat="obj in note.notes">{{obj.artist}}</button>
+</div>
+
+  <div class="row">
+  	 <div class="col-sm-2" style="background-color:#CC0000;">
+        <div>
+           <h5 style="color: white;">Canción</h5>
+        </div>
+    </div>
+      <div class="col-sm-3" style="background-color:#CC0000;">
+        <div>
+           <h5 style="color: white;">Estilo</h5>
+        </div>
+    </div>
+          <div class="col-sm-2" style="background-color:#CC0000;">
+        <div>
+           <h5 style="color: white;">Mejor Frase</h5>
+        </div>
+    </div>
+          <div class="col-sm-3" style="background-color:#CC0000;">
+        <div>
+           <h5 style="color: white;">Historial bolichero</h5>
+        </div>
+    </div>
+          <div class="col-sm-2" style="background-color:#CC0000;">
+        <div>
+           <h5 style="color: white;">Suena mejor con</h5>
+        </div>
+    </div>
+  </div>
+
+  <!-- Display of Objects -->
+  <div class="row" ng-repeat="obj in note.notes">
+    <div class="col-sm-2" style="background-color:lavender;">
+        <div>
+           <h5>{{obj.artist}}: {{obj.song}}</h5>
+        </div>
+    </div>
+    <div class="col-sm-3" style="background-color:#FFFF99;">
+         <p class="text-center">{{obj.style}}</p>
+    </div>
+    <div class="col-sm-2" style="background-color:lavender;">
+         <p class="text-center">{{obj.frase}}</p>
+    </div>
+    <div class="col-sm-3" style="background-color:#FFFF99;"><p>{{obj.histo}}</p>
+    </div>
+    <div class="col-sm-2" style="background-color:lavender;"><p>{{obj.suena}}</p>
+    </div>
+  </div>
+
+<!-- Reviews -->
+<ul>
+  <h4>Comparte tu opinión</h4>
+  <li ng-repeat="review in note.reviews">
+    <blockquote>
+      <strong>{{review.points}} Points</strong>
+      {{review.body}}
+      <cite class="clearfix">—{{review.author}}</cite>
+    </blockquote>
+  </li>
+</ul>
+
+<!--  Review Form -->
+<form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewCtrl.addReview(note)">
+
+  <!--  Live Preview -->
+  <blockquote >
+    <strong>{{reviewCtrl.review.points}} Points</strong>
+    {{reviewCtrl.review.body}}
+    <cite class="clearfix">—{{reviewCtrl.review.author}}</cite>
+  </blockquote>
+
+  <!--  Review Form -->
+  <h4>Submit a Review</h4>
+  <fieldset class="form-group">
+    <select ng-model="reviewCtrl.review.points" class="form-control" ng-options="points for points in [10,9,8,7,6,5,4,3,2,1]" title="Points">
+      <option value>Rate the Note</option>
+    </select>
+  </fieldset>
+  <fieldset class="form-group">
+    <textarea ng-model="reviewCtrl.review.body" class="form-control" placeholder="Write your Review" title="Review"></textarea>
+  </fieldset>
+  <fieldset class="form-group">
+    <input ng-model="reviewCtrl.review.author" type="email" class="form-control" placeholder="juanGomez@example.org" title="Email" />
+  </fieldset>
+  <fieldset class="form-group">
+    <input type="submit" class="btn btn-success pull-right" value="Submit Review" />
+  </fieldset>
+</form>
+</div>
+
+
+</body>
+</html>
+
+
+
+

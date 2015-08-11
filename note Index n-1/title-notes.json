@@ -1,0 +1,50 @@
+[
+  {
+  	"artist" : "Pitbull",
+    "song" : "I know You Want Me",
+    "style" : "El hit que popularizó Ricky Fort Combina rap latino y samplea a Buckerheads y otros house 90s. Ver también 'Hotel Room Service', que incluye la trompeta del hit house 'Push the Feeling On'.",
+    "frase" : "De 'Hotel Room Service': 'I'm the plumber tonight. I´ll check your pipes' [esta noche soy el promero, voy a revisar tu cañeria].",
+    "histo" : "Pitbull ha estado yendo a boliches desde los 13 años: 'Crecí en los clubs del barrio, los bolicehes europeos, los españoles. Sé lo que es un buen disco bolichero'.",
+    "suena" : "Prueben el cóctel favorito de Pitbull: vodka y arándanos, con una lima como toque final. 'Es como un licuado', dice."
+  },
+  {
+  	"artist" : "David Guetta",
+    "song" : "Memories",
+    "style" : "Música perfecta para una fiesta playera al amanecer en la isla de Mícono. Guetta nos trae un sucio rítmo euro-house mientras Kid Cudi recuerda una noche épica.",
+    "frase" : "'All the crazy shit i did tonight/those will be the best memories' [todas las locuras que hice esta noche/ésos serán mis mejores recuerdos].",
+    "histo" : "Este tipo está en el boliche desde 1984: Guetta, nacido en Francia, comenzó pinchando house y hip-hop en clubs nocturnos de París a los 17 años.",
+    "suena" : "MDMA y Veuve Clicquiot rosé en el yate de Christian Audigier."
+  },
+  {
+  	"artist" : "Lil Jon",
+    "song" : "Give It All U Got",
+    "style" : "Crunk-rap mezclado con Daft Punk: bocinazos de fogorn, voces de chicas R&B y los aullidos de Lil Jon que son como golpes en la boca del estomago. Dice Jon: 'Mi trabajo es hacer que arranque la fiesta'.",
+    "frase" : "'Drink until your body drops(...) ¡Let your animal out the cage!' [tomá hasta que tu cuerpo se caiga... ¡Dejá que tu animal salga de la jaula!]",
+    "histo" : "Frecuentemente el Masion de Miami, Privé y Tao en Las Vegas y varios lugares de su Atlanta natal. 'No podés hacer buena música clubber si no salís de noche', dice.",
+    "suena" : "El rapero recomienda el tequila el Patrón. 'Me tomo muchos shots', dice. 'A veces no estoy prestando atención y me tomo 10.'"
+  }, 
+  {
+  	"artist" : "Three 6 Mafia",
+    "song" : "Shake My",
+    "style" : "El dúo de Memphis abandona el gangsta rap en este manifiesto electrónico sobre mover el culo. 'Tenemos que dejar contentos a nuestros fans pop', dice Juicy J.",
+    "frase" : "'Estoy verde en el club, recién salido de la trampera, atrapando colas como una ratonera vieja'.",
+    "histo" : "Juicy J y DJ Paul van a clubs todas las noches de la semana. 'Salimos de fiesta vamos al bar, a clubs de strippers', dice Juicy. 'De eso se trata Three 6 Mafia.'",
+    "suena" : "Un Chardonnay y salmón cocinado a fuego lento. ¡Grosso! ¿Qué tal un enorme fajo de billetes para tirarle a alguna stripper?"
+  },
+  {
+  	"artist" : "Flo Rida",
+    "song" : "Sugar",
+    "style" : "Flo toma la melodía súper irritante de 'Blue (Da Ba Dee)', la canción modelo 1999 del grupo italiano Eiffel 65. Dice el rapper: 'Las melodías pegadizas son hot.'",
+    "frase" : "'Squeeze the sugar cane on your mouth' [apretá la caña de azúcar sobre tu boca].",
+    "histo" : "Aunque samplea un hit euro-trance, el MC no es muy bolichero. 'Toco casi todas la noches', dice. 'Tengo suficiente fiesta.'",
+    "suena" : "Unos Stoli Razztini en la despedida de soltera de tu mejor amiga."
+  },
+  {
+  	"artist" : "LMFAO",
+    "song" : "La La La",
+    "style" : "El dúo de Los Angeles formado por Sky Blu y Redfoo combina sintes eufóricos a lo Justice, voces robóticas y letras cursis sobre nuevos amores.",
+    "frase" : "Me hacés sentir súper, como el Hombre de Acero/Por vos me pongo como un estúpido recogiendo narcisos.",
+    "histo" : "Una vez, el dúo fue arrestado por bailar sobre una mesa en un club de Miami. 'Demasiados shots', dice Sky Blu. 'Vamos al boliche para quedar hechos mierda.'",
+    "suena" : "Veinte miligramos de anfetaminas y medio tuvo de Axe."
+  }
+]
